@@ -3,5 +3,5 @@ POST  http://localhost:3030/
 Content-Type: application/json
 
 {
-    "long_url":"https://youtube.com.br"
+    "long_url":"https://google.com"
 }
