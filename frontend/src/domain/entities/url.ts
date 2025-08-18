@@ -12,10 +12,15 @@ export class URL {
   }
 
   private static validate(longUrl: string): string {
-    if (!longUrl) throw new Error('url longa não foi informada');
-    if (typeof longUrl !== 'string') throw new Error('url precisa ser string');
+    if (!longUrl) throw new Error('URL não foi informada.');
+    if (typeof longUrl !== 'string') throw new Error('URL precisa ser string.');
     const trimmed: string = longUrl.trim();
-    if (trimmed.length === 0) throw new Error('url longa vazia');
+    if (trimmed.length === 0) throw new Error('URL está vazia.');
+    try {
+      new globalThis.URL(trimmed);
+    } catch {
+      throw new Error('URL com formato inválido.');
+    }
     return trimmed;
   }
 }

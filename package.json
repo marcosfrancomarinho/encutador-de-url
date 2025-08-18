@@ -1,0 +1,19 @@
+{
+  "name": "encutador",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/marcosfrancomarinho/encutador-de-url.git",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"yarn run start:frontend\" \"yarn run start:backend\"",
+    "install": "concurrently \"yarn run install:frontend\" \"yarn run install:backend\"",
+    "start:frontend": "cd ./frontend && yarn dev",
+    "start:backend": "cd ./backend/cmd/app && go run main.go",
+    "install:frontend": "cd ./frontend && yarn install",
+    "install:backend": "cd ./backend && go mod tidy"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "concurrently": "^9.2.0"
+  }
+}
