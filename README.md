@@ -25,7 +25,6 @@ Um aplicativo web para encurtar URLs de forma rápida, segura e eficiente, com g
 
 ## ⚡ Instalação
 
-### Frontend
 
 ```bash
 cd frontend
