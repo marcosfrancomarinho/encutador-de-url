@@ -31,7 +31,8 @@ cd frontend
 npm install
 npm run dev
 
-
+cd backend/cmd/app
+go run main.go
 
 backend/
   ├─ cmd/
