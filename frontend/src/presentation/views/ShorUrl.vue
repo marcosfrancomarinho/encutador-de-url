@@ -36,6 +36,6 @@ import { useUrlSavior } from '../composables/use.url.savior.ts';
 
 const url = ref('');
 const { datas, urlSavior } = useUrlSavior();
-const handlerCick =  () => urlSavior(url.value);
+const handlerCick =  async () =>  await urlSavior(url.value);
 
 </script>

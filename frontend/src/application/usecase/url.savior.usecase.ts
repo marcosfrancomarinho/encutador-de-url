@@ -10,8 +10,7 @@ export class UrlSaviorUseCase {
   }
 
   public async save(payload: RequestUrlSaviorDTO): Promise<ResponseUrlSaviorDTO> {
-    const url: URL = new URL(payload.longUrl);
-    console.log(url)
+    const url: URL = URL.create(payload.longUrl);
     const response = await this.httpPostClient.execute<ResponseUrlSaviorDTO>(url);
     return response;
   }

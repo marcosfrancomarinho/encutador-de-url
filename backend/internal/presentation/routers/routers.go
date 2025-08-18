@@ -2,7 +2,7 @@ package routers
 
 import (
 	"github.com/marcosfrancomarinho/short_url/internal/domain/gateway"
-	"github.com/marcosfrancomarinho/short_url/pkg/container"
+	"github.com/marcosfrancomarinho/short_url/internal/shared/container"
 )
 
 type Routers struct {
