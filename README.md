@@ -7,9 +7,9 @@ Um aplicativo web para encurtar URLs de forma rápida, segura e eficiente, com g
 ## 💻 Tecnologias
 
 - **Frontend:** Vue 3, TypeScript, Tailwind CSS  
-- **Backend:** Node.js ou Go (dependendo da implementação)  
-- **Banco de dados:** SQLite / PostgreSQL / MySQL (ajustável)  
-- **Outras libs:** Axios, QR Code generator  
+- **Backend:**  Go
+- **Banco de dados:** SQLite 
+- **Outras libs:** Axios, Gin, Shortid
 
 ---
 
