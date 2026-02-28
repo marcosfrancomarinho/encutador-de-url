@@ -27,9 +27,9 @@ Um aplicativo web para encurtar URLs de forma rápida, segura e eficiente, com g
 
 
 ```bash
-cd frontend
-npm install
-npm run dev
+cd frontend/
+npm install or yarn install
+npm run dev or yarn dev
 
 cd backend/
 go mod tidy
@@ -38,12 +38,17 @@ go run main.go
 backend/
   ├─ main.go
   ├─ internal/
-  │   ├─ controllers/
-  │   ├─ services/
-  │   └─ database/
+  │   ├─ application/
+  │   ├─ domain/
+  │   ├─ infrastructure/
+  │   ├─ presentation/
+  │   └─ shared/
 frontend/
   ├─ src/
-  │   ├─ components/
-  │   ├─ composables/
-  │   └─ App.vue
+  │   ├─ application/
+  │   ├─ domain/
+  │   ├─ infrastructure/
+  │   ├─ presentation/
+  │   ├─ shared/
+  │   └─ main.ts
   └─ package.json
