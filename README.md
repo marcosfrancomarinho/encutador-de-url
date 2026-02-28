@@ -31,13 +31,12 @@ cd frontend
 npm install
 npm run dev
 
-cd backend/cmd/app
+cd backend/
+go mod tidy
 go run main.go
 
 backend/
-  ├─ cmd/
-  │   └─ app/
-  │       └─ main.go
+  ├─ main.go
   ├─ internal/
   │   ├─ controllers/
   │   ├─ services/
