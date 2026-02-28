@@ -25,16 +25,27 @@ Um aplicativo web para encurtar URLs de forma rápida, segura e eficiente, com g
 
 ## ⚡ Instalação
 
-
 ```bash
+yarn install
+yarn dev
+
+OU
+
 cd frontend/
-npm install or yarn install
-npm run dev or yarn dev
+yarn install
+yarn dev
+
+cd frontend/
+yarn install
+
 
 cd backend/
 go mod tidy
 go run main.go
+````
 
+## 🧱  Estrutura do projeto
+``` bash
 backend/
   ├─ main.go
   ├─ internal/
@@ -52,3 +63,4 @@ frontend/
   │   ├─ shared/
   │   └─ main.ts
   └─ package.json
+````
