@@ -3,7 +3,7 @@ package database
 import (
 	"database/sql"
 	"fmt"
-	_ "github.com/mattn/go-sqlite3"
+	_"modernc.org/sqlite"
 	"log"
 	"os"
 	"sync"
@@ -21,7 +21,7 @@ func InitDataBase() *sql.DB {
 			log.Fatal(err)
 		}
 
-		db, err := sql.Open("sqlite3", fmt.Sprintf("%s/../../database.sqlite", path))
+		db, err := sql.Open("sqlite", fmt.Sprintf("%s/../../database.sqlite", path))
 		if err != nil {
 			log.Fatal(err)
 		}
