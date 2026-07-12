@@ -35,8 +35,6 @@ cd frontend/
 yarn install
 yarn dev
 
-cd frontend/
-yarn install
 
 
 cd backend/
